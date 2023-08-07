@@ -1,0 +1,8 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/en/configs/bookmarks
+
+- d.rymcg.tech:
+    - Github:
+        - abbr: D.RY
+          href: https://github.com/EnigmaCurry/d.rymcg.tech

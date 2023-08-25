@@ -2,17 +2,99 @@
 # For configuration options and examples, please see:
 # https://gethomepage.dev/en/configs/services
 
-- My First Group:
-    - My First Service:
-        href: http://localhost/
-        description: Homepage is awesome
-
-- My Second Group:
-    - My Second Service:
-        href: http://localhost/
-        description: Homepage is the best
-
-- My Third Group:
-    - My Third Service:
-        href: http://localhost/
-        description: Homepage is 😎
+- Apps:
+    - Gitea:
+        description: Git host (like self-hosted GitHub) and oauth server
+        href: https://git.d.rymcg.tech/
+        icon: gitea.png
+        server: d.rymcg.tech
+        container: traefik-traefik-1
+    - Cryptpad:
+        description: a collaborative document and spreadsheet editor
+        href: https://cryptpad.d.rymcg.tech/drive
+        icon: cryptpad.png
+        server: d.rymcg.tech
+        container: cryptpad-cryptpad-1
+    - qBittorrent:
+        description: a Bittorrent (libtorrent v2) client with a combined VPN client
+        href: https://qbittorrent.thewooskeys.com/
+        icon: qbittorrent.png
+        server: d.rymcg.tech
+        container: qbittorrent-qbittorrent-1
+        widget:
+            type: qbittorrent
+            url: http://qbittorrent.host.or.ip
+            username: username
+            password: password
+            fields: ["leech", "download", "seed", "upload"].
+    - TiddlyWiki:
+        description: (NodeJS version) Advanced server edition of TiddlyWiki with image CDN
+        href: https://wiki.d.rymcg.tech/login
+        icon: xwiki.png
+        server: d.rymcg.tech
+        container: tiddlywiki-nodejs-tiddlywiki-nodejs-1
+    - Invidious:
+        description: a Youtube proxy
+        href: https://gulchadmin:2ZPjDzfsDKBV09Uibq0b@yt.d.rymcg.tech/
+        icon: invidious.png
+        server: d.rymcg.tech
+        container: invidious-invidious-1
+    - TinyTinyRSS:
+        description: an RSS reader / proxy
+        href: https://ttrss.d.rymcg.tech/tt-rss/
+        icon: tinytinyrss.png
+        server: d.rymcg.tech
+        container: ttrss-app-1
+    - Lemmy:
+        description: a link aggregator and forum for the fediverse
+        href: https://lemmy.d.rymcg.tech/
+        icon: lemmy.png
+        server: d.rymcg.tech
+        container: lemmy-lemmy-1
+- Services:
+    - Baikal:
+        description: a lightweight CalDAV+CardDAV server
+        href: https://baikal.d.rymcg.tech/admin/
+        icon: baikal.png
+        server: d.rymcg.tech
+        container: baikal-baikal-1
+    - VaultWarden:
+        description: a bitwarden compatible password manager written in Rust
+        href: https://vaultwarden.d.rymcg.tech
+        icon: vaultwarden.png
+        server: d.rymcg.tech
+        container: vaultwarden-vaultwarden-1
+        showStats: false
+    - xBrowserSync:
+        description: a bookmark manager
+        href: https://xbs.d.rymcg.tech/
+        icon: xbrowsersync.png
+        server: d.rymcg.tech
+        container: xbs-api-1
+- Infrastructure:
+    - Traefik:
+        #href: http://127.0.0.1:65201/dashboard/#/http/routers
+        description: HTTP / TLS / TCP / UDP reverse proxy
+        icon: traefik.png
+        server: d.rymcg.tech
+        container: traefik-traefik-1
+        #widget:
+        #  type: traefik
+        #  url: http://127.0.0.1:57074/dashboard/#/http/routers
+        #  username: admin
+        #  password: password
+    - Prometheus:
+        href: https://metrics.d.rymcg.tech/d/rYdddlPWk/node-exporter-full?orgId=1
+        description: a systems monitoring and alerting toolkit (+ node-exporter + cAdvisor + Grafana)
+        icon: prometheus.png
+        server: d.rymcg.tech
+        container: prometheus-prometheus-1
+        #widget:
+        #    type: prometheus
+        #    url: https://metrics.d.rymcg.tech/d/rYdddlPWk/node-exporter-full?orgId=1
+        #    fields: ["targets_up", "targets_down", "targets_total"]
+        widget:
+            type: grafana
+            url: https://metrics.d.rymcg.tech
+            username: admin
+            password: password

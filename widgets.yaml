@@ -2,11 +2,43 @@
 # For configuration options and examples, please see:
 # https://gethomepage.dev/en/configs/widgets
 
+- logo:
+    icon: /images/images/hashbang.png
+    
+- greeting:
+    text_size: 3xl
+    text: Welcome to your d.rymcg.tech dashboard!
+    
 - resources:
+    label: d.rymcg.tech host
     cpu: true
     memory: true
     disk: /
+    uptime: true
+    expanded: true
+  
+- search:
+    provider: duckduckgo
+    target: _blank
+    focus: false
+  	
+- openmeteo:
+    label: My Town
+    latitude: -37.427954
+    longitude: 175.959635
+    timezone: Pacific/Auckland
+    units: imperial
+    cache: 15
+  
+# Example how to use "Providers" in settings.yaml to hold secrets, such as an API key
+#- weather:
+#    latitude: -37.427954
+#    longitude: 175.959635
+#    provider: weatherapi
 
-# - search:
-#     provider: duckduckgo
-#     target: _blank
+- datetime:
+    text_size: 2xl
+    format:
+      dateStyle: short
+      timeStyle: short
+      hour12: true

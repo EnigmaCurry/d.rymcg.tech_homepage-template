@@ -4,5 +4,24 @@
 
 - d.rymcg.tech:
     - Github:
-        - abbr: D.RY
+        - abbr: d.ry
           href: https://github.com/EnigmaCurry/d.rymcg.tech
+          icon: github.png
+    - Template Homeage Dashboard:
+        - abbr: d.ry/HP
+          href: https://github.com/EnigmaCurry/d.rymcg.tech_homepage-template
+          icon: homepage.png
+    - Chatroom:
+        - href: https://matrix.to/#/#d.rymcg.tech:enigmacurry.com
+          abbr: Ma
+          icon: matrix.png
+
+- Resources:
+    - Digital Ocean:
+        - abbr: DO
+          icon: digital-ocean.png
+          href: https://cloud.digitalocean.com/login
+    - Mullvad:
+        - abbr: MV
+          icon: mullvad.png
+          href: https://mullvad.net/

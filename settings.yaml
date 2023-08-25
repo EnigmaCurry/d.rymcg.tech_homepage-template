@@ -2,6 +2,58 @@
 # For configuration options and examples, please see:
 # https://gethomepage.dev/en/configs/settings
 
+background:
+  image: /images/images/crazy-greenblue-waves.jpg
+  blur: ""
+  saturate: 100
+  brightness: 50
+  opacity: 100
+
+cardBlur: md
+  
+favicon: /images/images/hashbang.png
+
+title: My Awesome Homepage
+
+theme: dark
+
+color: slate
+  
+headerStyle: boxed
+
+language: en
+
+target: _blank
+
+showStats: true
+
+iconStyle: theme
+
+hideErrors: false
+
+fiveColumns: false
+
+layout:
+  - Apps:
+    style: row
+    columns: 5
+  - Services:
+    style: row
+    columns: 3
+  - Infrastructure:
+
+disableCollapse: false
+
+quicklaunch:
+    searchDescriptions: true
+    hideInternetSearch: true
+    hideVisitURL: true
+    
+hideVersion: true
+
+# providers is for secrets
+# Replace these sample API keys with your own, then reference your secret
+# API key in services.yaml
 providers:
   openweathermap: openweathermapapikey
   weatherapi: weatherapiapikey

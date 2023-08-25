@@ -17,7 +17,7 @@
         container: cryptpad-cryptpad-1
     - qBittorrent:
         description: a Bittorrent (libtorrent v2) client with a combined VPN client
-        href: https://qbittorrent.thewooskeys.com/
+        href: https://qbittorrent.d.rymcg.tech/
         icon: qbittorrent.png
         server: d.rymcg.tech
         container: qbittorrent-qbittorrent-1
@@ -35,7 +35,7 @@
         container: tiddlywiki-nodejs-tiddlywiki-nodejs-1
     - Invidious:
         description: a Youtube proxy
-        href: https://gulchadmin:2ZPjDzfsDKBV09Uibq0b@yt.d.rymcg.tech/
+        href: https://yt.d.rymcg.tech/
         icon: invidious.png
         server: d.rymcg.tech
         container: invidious-invidious-1
